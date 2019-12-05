@@ -1,0 +1,278 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+body {
+    font-family: Arial;
+    font-size: 12px;
+    background-color: #d4d4d4;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0; 
+}
+  
+header, nav, footer, section, article, div {
+    box-sizing: border-box;
+}
+  
+* {
+    box-sizing: border-box;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+
+ .header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    min-height: 56px;
+    transition: min-height 0.3s;
+    padding: 16px;
+    display: flex;
+    background-color: #424242;
+    color: #fff;
+ }
+
+ .header_inner {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  div.udacity_logo {
+    display: inline-block;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    vertical-align: top;
+}
+
+  .header_logo {
+    height: 72px;
+    width: 72px;
+  }
+
+  div.profile_logo {
+    display: inline-block;
+    margin-right: 1em;
+    vertical-align: top;
+  }
+
+  div.profile_text {
+    display: inline-block;
+  }
+
+ .header_profile {
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    border: 2px solid #ad1818;
+ }
+
+ .header_text {
+    display: inline-block;
+    margin: 1em 0em;
+ }
+
+ .fa {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    margin: 0.5em 0em;
+ }
+
+ /*
+  *
+  * Main
+  *
+  */
+
+  .main_container {
+      margin: 0.5em;
+      background-color: white;
+      border-radius: 10px;
+  }
+
+  /*
+  *
+  * Content
+  *
+  */
+
+  .content {
+    padding: 16px;
+  }
+
+  /*
+ *
+ * Hero
+ *
+ */
+
+.hero {
+    width: 100%;
+    position: relative;
+    background-image: url("img/wellpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+  }
+
+  .hero article {
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 1em;
+  }
+
+  .description {
+      font-size: 16px;
+  }
+
+  #achievement_title{
+    font-size: 24px;
+    color: #7d97ad;
+  }
+
+  .achievement {
+    margin-top: 1em; 
+    padding: 16px;
+    /* border: 1px solid black; */
+  }
+
+  .achievement_items{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 1em;
+  }
+
+  .item {
+     width: 33.33%;
+  }
+
+ #first.item {
+    text-align: left;
+ }
+
+ #second.item {
+    text-align: center;
+ }
+
+ #third.item {
+    text-align: right;
+ }
+
+  .achievement_logo {
+      width: 90%;
+      height: 200px;
+      border-radius: 10px;
+  }
+
+  .achievement_title {
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+    padding: 8px;
+  }
+
+  .achievement_title_header {
+      font-size: medium;
+      margin-bottom: 8px;
+  }
+
+  .achievement_title_link {
+      font-size: small;
+  }
+
+  /*
+ *
+ * Footer
+ *
+ */
+
+ footer {
+     text-align: center;
+     padding: 16px;
+ }
+
+ hr {
+    margin-bottom: 1em;
+ }
+
+ .inner_footer {
+    font-family: Courier New;
+ }
+
+
+ @media screen and (min-width: 900px) {
+    .main_container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    div.udacity_logo {
+        display: block;
+        margin-bottom: 1em;
+        text-align: center;
+    }
+
+    .item {
+        width: 50%;
+    }
+
+    #first.item,  #third.item {
+        text-align: left;
+     }
+    
+     #second.item {
+        text-align: right;
+     }
+  }
+
+  @media screen and (min-width: 461px) {
+    .header-social {
+        float: right;
+        margin-right: 1em;
+     }
+  }
+
+  @media screen and (max-width: 570px) {
+    .item {
+        width: 100%;
+    }
+
+    #first.item, #second.item,  #third.item {
+        text-align: center;
+     }
+  }
+
+  @media screen and (max-width: 460px) {
+    div.profile_logo {
+      display: block;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+    div.profile_text {
+      display: block;
+      margin-bottom: 1em;
+      text-align: center;
+    }
+    .header-social {
+        display: block !important;
+        text-align: center;
+    }
+  }
