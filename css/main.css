@@ -119,10 +119,10 @@ header, nav, footer, section, article, div {
 .hero {
     width: 100%;
     position: relative;
-    background-image: url("img/wellpaper.jpg");
+    background-image: url("../img/wellpaper.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 300px;
+    min-height: 400px;
   }
 
   .hero article {
